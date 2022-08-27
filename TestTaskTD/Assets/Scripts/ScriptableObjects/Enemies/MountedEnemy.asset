@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95fb1104e7365f4c9a9b3237657036f, type: 3}
+  m_Name: MountedEnemy
+  m_EditorClassIdentifier: 
+  enemyHealth: 120
+  emenyMovementSpeed: 1.25
+  enemyDamage: 10
+  minCoinReward: 5
+  maxCoinReward: 10
