@@ -832,6 +832,10 @@ PrefabInstance:
       propertyPath: coinManager
       value: 
       objectReference: {fileID: 1556291228}
+    - target: {fileID: 5088631424796458271, guid: 389d8817425436f49bdb0533c8dafac0, type: 3}
+      propertyPath: towerPrices.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 389d8817425436f49bdb0533c8dafac0, type: 3}
 --- !u!4 &416074587 stripped

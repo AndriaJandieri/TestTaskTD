@@ -9,20 +9,22 @@ public class TowerPlaceScript : MonoBehaviour
     public GameObject[] towerPrefabs;
 
     Vector3 offset = new Vector3(0, 0.3f, -0.1f);
-    
+
+
     public void BuildSelectedTower(int index)
-    {
-        if (CoinManager.currentAmountCoins >= towerPrefabs[index].GetComponent<Tower>().towerPrice)
-        {
-            GameObject tower = Instantiate(towerPrefabs[index], transform.position + offset, transform.rotation);
+    {        
+        GameObject tower = Instantiate(towerPrefabs[index], transform.position + offset, transform.rotation);
+        int towerPrice = tower.GetComponent<Tower>().towerPrice;
+
+        if (CoinManager.currentAmountCoins >=towerPrice )
+        {            
             coinManager.UpdateCoinAmount(-tower.GetComponent<Tower>().towerPrice);
             TougleTowerSelectionWindow(false);
-
-            Debug.Log(CoinManager.currentAmountCoins);
         }
         else
         {
-            Debug.Log("Not Enough Coins");
+            Destroy(tower);
+            Debug.Log("Not Enough Coins" + CoinManager.currentAmountCoins);
         }
     }
     public void TougleTowerSelectionWindow(bool _tougle)

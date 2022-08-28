@@ -33,9 +33,9 @@ public class CoinManager : MonoBehaviour
         currentAmountCoins = currentAmountCoins + _amount;
         coinsText.text = currentAmountCoins.ToString();
 
-        if (currentAmountCoins < 0)
-        {
-            coinsText.text = "0";
-        }
+        //if (currentAmountCoins < 0)
+        //{
+        //    coinsText.text = "0";
+        //}
     }
 }
